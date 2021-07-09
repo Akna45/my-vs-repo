@@ -1,0 +1,7 @@
+D:\Visual Studio Project Directory\ConsoleApplication\bin\Release\ConsoleApplication.exe.config
+D:\Visual Studio Project Directory\ConsoleApplication\bin\Release\ConsoleApplication.exe
+D:\Visual Studio Project Directory\ConsoleApplication\bin\Release\ConsoleApplication.pdb
+D:\Visual Studio Project Directory\ConsoleApplication\obj\Release\ConsoleApplication.csprojAssemblyReference.cache
+D:\Visual Studio Project Directory\ConsoleApplication\obj\Release\ConsoleApplication.csproj.CoreCompileInputs.cache
+D:\Visual Studio Project Directory\ConsoleApplication\obj\Release\ConsoleApplication.exe
+D:\Visual Studio Project Directory\ConsoleApplication\obj\Release\ConsoleApplication.pdb

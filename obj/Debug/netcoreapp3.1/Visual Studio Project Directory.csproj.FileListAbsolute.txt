@@ -1,0 +1,5 @@
+D:\Visual Studio Project Directory\obj\Debug\netcoreapp3.1\Visual Studio Project Directory.csprojAssemblyReference.cache
+D:\Visual Studio Project Directory\obj\Debug\netcoreapp3.1\Visual_Studio_Project_Directory.Jendela.Form1.resources
+D:\Visual Studio Project Directory\obj\Debug\netcoreapp3.1\Visual_Studio_Project_Directory.Jendela.My_Project.Resources.resources
+D:\Visual Studio Project Directory\obj\Debug\netcoreapp3.1\Visual_Studio_Project_Directory.WPFApp_Testing.Properties.Resources.resources
+D:\Visual Studio Project Directory\obj\Debug\netcoreapp3.1\Visual Studio Project Directory.csproj.GenerateResource.cache

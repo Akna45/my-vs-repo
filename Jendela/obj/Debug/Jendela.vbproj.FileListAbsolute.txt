@@ -1,0 +1,25 @@
+D:\Visual Studio Code Project Directory\Jendela\bin\Debug\Jendela.exe.config
+D:\Visual Studio Code Project Directory\Jendela\bin\Debug\Jendela.exe
+D:\Visual Studio Code Project Directory\Jendela\bin\Debug\Jendela.pdb
+D:\Visual Studio Code Project Directory\Jendela\bin\Debug\Jendela.xml
+D:\Visual Studio Code Project Directory\Jendela\obj\Debug\Jendela.vbprojAssemblyReference.cache
+D:\Visual Studio Code Project Directory\Jendela\obj\Debug\Jendela.Form1.resources
+D:\Visual Studio Code Project Directory\Jendela\obj\Debug\Jendela.Resources.resources
+D:\Visual Studio Code Project Directory\Jendela\obj\Debug\Jendela.vbproj.GenerateResource.cache
+D:\Visual Studio Code Project Directory\Jendela\obj\Debug\Jendela.vbproj.CoreCompileInputs.cache
+D:\Visual Studio Code Project Directory\Jendela\obj\Debug\Jendela.exe
+D:\Visual Studio Code Project Directory\Jendela\obj\Debug\Jendela.xml
+D:\Visual Studio Code Project Directory\Jendela\obj\Debug\Jendela.pdb
+D:\Visual Studio Project Directory\Jendela\bin\Debug\Jendela.exe.config
+D:\Visual Studio Project Directory\Jendela\bin\Debug\Jendela.exe
+D:\Visual Studio Project Directory\Jendela\bin\Debug\Jendela.pdb
+D:\Visual Studio Project Directory\Jendela\bin\Debug\Jendela.xml
+D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.vbprojAssemblyReference.cache
+D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.Form1.resources
+D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.Resources.resources
+D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.vbproj.GenerateResource.cache
+D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.vbproj.CoreCompileInputs.cache
+D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.exe
+D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.xml
+D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.pdb
+D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.Form2.resources
