@@ -14,3 +14,4 @@ E:\Visual Studio Project Directory\Dasbor\obj\Debug\netcoreapp3.1\Dasbor.csproj.
 E:\Visual Studio Project Directory\Dasbor\obj\Debug\netcoreapp3.1\Dasbor.dll
 E:\Visual Studio Project Directory\Dasbor\obj\Debug\netcoreapp3.1\Dasbor.pdb
 E:\Visual Studio Project Directory\Dasbor\obj\Debug\netcoreapp3.1\Dasbor.genruntimeconfig.cache
+E:\Visual Studio Project Directory\Dasbor\obj\Debug\netcoreapp3.1\Dasbor.GeneratedMSBuildEditorConfig.editorconfig
