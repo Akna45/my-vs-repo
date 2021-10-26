@@ -11,19 +11,20 @@ namespace ProgramKonsol
     
     class Program
     {
+        public const double PI = 3.1415926535897932385;
+        public readonly double Size;
+        public ConstAndReadOnlyExample(int size)
+        {
+            this.Size = size; // Cannot be further modified!
+        }
         static void Main(string[] args)
         {
             //input
-            Mobil mobilToyota1 = new Mobil("Toyota", "Hatchback", 2019, 100);
-            Mobil mobilToyota2 = new Mobil(mobilToyota1);
-            Mobil mobil = new Mobil();
+            
             //output
-            mobilToyota1.getInfoMobil();
-            Console.WriteLine("--------------");
-            mobilToyota2.getInfoMobil();
-            Console.WriteLine("--------------");
-            mobil.getInfoMobil();
-            Console.ReadKey();
+            Console.WriteLine("halo, ini adalah koding tertanggal : "+DateTime.Now);
+            
+                Console.ReadKey();
         }
         /// <summary>
         /// anjir, ini membaca sebuah file
@@ -121,6 +122,69 @@ namespace ProgramKonsol
                 kelayakan = "Masih Layak Jalan!";
             }
             return kelayakan;
+        }
+    }
+    public class Cat
+    {
+        // Field name
+        private string name;
+        // Field color
+        private string color;
+        public string Name
+        {
+            // Getter of the property "Name"
+            get
+            {
+                return this.name;
+            }
+            // Setter of the property "Name"
+            set
+            {
+                this.name = value;
+            }
+        }
+        public string Color
+        {
+            // Getter of the property "Color"
+            get
+            {
+                return this.color;
+            }
+            // Setter of the property "Color"
+            set
+            {
+                this.color = value;
+            }
+        }
+        // Default constructor
+        public Cat()
+        {
+            this.name = "Unnamed";
+            this.color = "gray";
+        }
+        // Constructor with parameters
+        public Cat(string name, string color)
+        {
+            this.name = name;
+            this.color = color;
+        }
+        // Method SayMiau
+        public void SayMiau()
+        {
+            Console.WriteLine("Cat {0} said: Miauuuuuu!", name);
+        }
+    }
+    public class Sequence
+    {
+        // Static field, holding the current sequence value
+        private static int currentValue = 0;
+        // Intentionally deny instantiation of this class
+        
+        // Static method for taking the next sequence value
+        public static int NextValue()
+        {
+            currentValue++;
+            return currentValue;
         }
     }
 }

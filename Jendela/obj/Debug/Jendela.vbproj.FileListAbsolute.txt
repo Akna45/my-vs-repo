@@ -23,3 +23,16 @@ D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.exe
 D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.xml
 D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.pdb
 D:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.Form2.resources
+E:\Visual Studio Project Directory\Jendela\bin\Debug\Jendela.exe.config
+E:\Visual Studio Project Directory\Jendela\bin\Debug\Jendela.exe
+E:\Visual Studio Project Directory\Jendela\bin\Debug\Jendela.pdb
+E:\Visual Studio Project Directory\Jendela\bin\Debug\Jendela.xml
+E:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.vbproj.AssemblyReference.cache
+E:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.Form1.resources
+E:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.Form2.resources
+E:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.Resources.resources
+E:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.vbproj.GenerateResource.cache
+E:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.vbproj.CoreCompileInputs.cache
+E:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.exe
+E:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.xml
+E:\Visual Studio Project Directory\Jendela\obj\Debug\Jendela.pdb

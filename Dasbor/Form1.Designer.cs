@@ -289,7 +289,7 @@ namespace Dasbor
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Dasbor.Properties.Resources.money_bag;
-            this.pictureBox2.Location = new System.Drawing.Point(167, 19);
+            this.pictureBox2.Location = new System.Drawing.Point(170, 19);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(91, 81);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -301,11 +301,11 @@ namespace Dasbor
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Open Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(101)))), ((int)(((byte)(199)))));
-            this.label4.Location = new System.Drawing.Point(3, 39);
+            this.label4.Location = new System.Drawing.Point(0, 39);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(163, 39);
+            this.label4.Size = new System.Drawing.Size(180, 39);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Rp. 69.000";
+            this.label4.Text = "Rp. 420.000";
             // 
             // label5
             // 

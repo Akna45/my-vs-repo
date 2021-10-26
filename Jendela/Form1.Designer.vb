@@ -100,7 +100,7 @@ Partial Class Form1
         'LAINLAINToolStripMenuItem
         '
         Me.LAINLAINToolStripMenuItem.Name = "LAINLAINToolStripMenuItem"
-        Me.LAINLAINToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LAINLAINToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
         Me.LAINLAINToolStripMenuItem.Text = "LAIN LAIN"
         '
         'Form1
@@ -108,7 +108,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.BackgroundImage = Global.Jendela.My.Resources.Resources.Asta_Black_Mode
+        Me.BackgroundImage = Global.Jendela.My.Resources.Resources._1085721
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1086, 595)
         Me.Controls.Add(Me.Button2)

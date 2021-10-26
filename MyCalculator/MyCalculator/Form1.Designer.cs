@@ -30,10 +30,10 @@ namespace MyCalculator
         private void InitializeComponent()
         {
             this.txtDisplay = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_BS = new System.Windows.Forms.Button();
             this.BtnCE = new System.Windows.Forms.Button();
             this.BtnC = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_PM = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@ namespace MyCalculator
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
+            this.btn_Equals = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -63,17 +63,18 @@ namespace MyCalculator
             this.txtDisplay.Text = "0";
             this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button1
+            // btn_BS
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(79)))), ((int)(((byte)(190)))));
-            this.button1.Font = new System.Drawing.Font("Wingdings", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(12, 74);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 73);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_BS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(79)))), ((int)(((byte)(190)))));
+            this.btn_BS.Font = new System.Drawing.Font("Wingdings", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.btn_BS.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_BS.Location = new System.Drawing.Point(12, 74);
+            this.btn_BS.Name = "btn_BS";
+            this.btn_BS.Size = new System.Drawing.Size(75, 73);
+            this.btn_BS.TabIndex = 1;
+            this.btn_BS.Text = "";
+            this.btn_BS.UseVisualStyleBackColor = false;
+            this.btn_BS.Click += new System.EventHandler(this.btn_BS_Click);
             // 
             // BtnCE
             // 
@@ -86,6 +87,7 @@ namespace MyCalculator
             this.BtnCE.TabIndex = 1;
             this.BtnCE.Text = "CE";
             this.BtnCE.UseVisualStyleBackColor = false;
+            this.BtnCE.Click += new System.EventHandler(this.BtnCE_Click);
             // 
             // BtnC
             // 
@@ -100,17 +102,18 @@ namespace MyCalculator
             this.BtnC.UseVisualStyleBackColor = false;
             this.BtnC.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btn_PM
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(79)))), ((int)(((byte)(190)))));
-            this.button4.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button4.Location = new System.Drawing.Point(255, 74);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 73);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "±";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_PM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(79)))), ((int)(((byte)(190)))));
+            this.btn_PM.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PM.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_PM.Location = new System.Drawing.Point(255, 74);
+            this.btn_PM.Name = "btn_PM";
+            this.btn_PM.Size = new System.Drawing.Size(75, 73);
+            this.btn_PM.TabIndex = 1;
+            this.btn_PM.Text = "±";
+            this.btn_PM.UseVisualStyleBackColor = false;
+            this.btn_PM.Click += new System.EventHandler(this.btn_PM_Click);
             // 
             // button5
             // 
@@ -123,6 +126,7 @@ namespace MyCalculator
             this.button5.TabIndex = 1;
             this.button5.Text = "+";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.Operational_Func);
             // 
             // button6
             // 
@@ -174,6 +178,7 @@ namespace MyCalculator
             this.button9.TabIndex = 1;
             this.button9.Text = "-";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.Operational_Func);
             // 
             // button10
             // 
@@ -225,6 +230,7 @@ namespace MyCalculator
             this.button13.TabIndex = 1;
             this.button13.Text = "×";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.Operational_Func);
             // 
             // button14
             // 
@@ -276,18 +282,20 @@ namespace MyCalculator
             this.button17.TabIndex = 1;
             this.button17.Text = "÷";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.Operational_Func);
             // 
-            // button18
+            // btn_Equals
             // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(79)))), ((int)(((byte)(190)))));
-            this.button18.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button18.Location = new System.Drawing.Point(174, 390);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 73);
-            this.button18.TabIndex = 1;
-            this.button18.Text = "=";
-            this.button18.UseVisualStyleBackColor = false;
+            this.btn_Equals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(79)))), ((int)(((byte)(190)))));
+            this.btn_Equals.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Equals.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_Equals.Location = new System.Drawing.Point(174, 390);
+            this.btn_Equals.Name = "btn_Equals";
+            this.btn_Equals.Size = new System.Drawing.Size(75, 73);
+            this.btn_Equals.TabIndex = 1;
+            this.btn_Equals.Text = "=";
+            this.btn_Equals.UseVisualStyleBackColor = false;
+            this.btn_Equals.Click += new System.EventHandler(this.btn_Equals_Click);
             // 
             // button19
             // 
@@ -329,7 +337,7 @@ namespace MyCalculator
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button12);
-            this.Controls.Add(this.button18);
+            this.Controls.Add(this.btn_Equals);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button8);
@@ -340,16 +348,15 @@ namespace MyCalculator
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn_PM);
             this.Controls.Add(this.BtnC);
             this.Controls.Add(this.BtnCE);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_BS);
             this.Controls.Add(this.txtDisplay);
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.NumericValue);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -359,10 +366,10 @@ namespace MyCalculator
         #endregion
 
         private System.Windows.Forms.TextBox txtDisplay;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_BS;
         private System.Windows.Forms.Button BtnCE;
         private System.Windows.Forms.Button BtnC;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_PM;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
@@ -376,7 +383,7 @@ namespace MyCalculator
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button btn_Equals;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
     }

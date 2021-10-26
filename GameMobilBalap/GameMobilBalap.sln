@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameMobilBalap", "GameMobilBalap\GameMobilBalap.csproj", "{AC0C55AC-0C15-4FE4-8E4D-22FAC3266F88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC0C55AC-0C15-4FE4-8E4D-22FAC3266F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0C55AC-0C15-4FE4-8E4D-22FAC3266F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0C55AC-0C15-4FE4-8E4D-22FAC3266F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0C55AC-0C15-4FE4-8E4D-22FAC3266F88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA8EE8F6-2BBC-4634-80E9-0F73FF448723}
+	EndGlobalSection
+EndGlobal
