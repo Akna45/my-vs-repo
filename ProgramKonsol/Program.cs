@@ -4,56 +4,52 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Contoh;
+using Pembelajaran;
 
 namespace ProgramKonsol
 {
-    
-    
     class Program
     {
-        public const double PI = 3.1415926535897932385;
-        public readonly double Size;
-        public ConstAndReadOnlyExample(int size)
-        {
-            this.Size = size; // Cannot be further modified!
-        }
+        
         static void Main(string[] args)
         {
             //input
-            
+            int[,] matrix =
+            {
+                { 1, 2, 3, 4}, // row 0 values
+                { 5, 6, 7, 8}, // row 1 values
+            };
+
             //output
             Console.WriteLine("halo, ini adalah koding tertanggal : "+DateTime.Now);
-            
-                Console.ReadKey();
-        }
-        /// <summary>
-        /// anjir, ini membaca sebuah file
-        /// </summary>
-        /// <param name="fileName"></param>
-        static void ReadFile(string fileName)
-        {
-            try
+            string firstDogName = null;
+            Console.Write("Enter first dog name: ");
+            firstDogName = Console.ReadLine();
+            // Using a constructor to create a dog with specified name
+            Dog firstDog = new Dog(firstDogName);
+            // Using a constructor to create a dog wit a default name
+            Dog secondDog = new Dog();
+            Console.Write("Enter second dog name: ");
+            string secondDogName = Console.ReadLine();
+            // Using property to set the name of the dog
+            secondDog.Name = secondDogName;
+            // Creating a dog with a default name
+            Dog thirdDog = new Dog();
+            Dog[] dogs = new Dog[] { firstDog, secondDog, thirdDog };
+            foreach (Dog dog in dogs)
             {
-                TextReader reader = new StreamReader(fileName);
-                string line = reader.ReadLine();
-                Console.WriteLine(line);
-                reader.Close();
+                dog.Bark();
             }
-            catch (FileNotFoundException fnfe)
-            {
-                // Exception handler for FileNotFoundException
-                // We just inform the user that there is no such file
-                Console.WriteLine(
-                "The file '{0}' is not found.", fileName);
-            }
-            catch (IOException ioe)
-            {
-                // Exception handler for other input/output exceptions
-                // We just print the stack trace on the console
-                Console.WriteLine(ioe.StackTrace);
-            }
+            Cat kucing1 = new Cat("","");
+            kucing1.SayMiau();
+            Console.ReadKey();
         }
     }
+}
+namespace Contoh
+{
+    // gunakan namespace ini untuk menaruh contoh class dari buku/referensi
     class Mobil
     {
         public string pabrikan;
@@ -174,17 +170,78 @@ namespace ProgramKonsol
             Console.WriteLine("Cat {0} said: Miauuuuuu!", name);
         }
     }
+    // Class declaration
+    public class Dog
+    { // Opening bracket of the class body
+    // Field declaration
+        private string name;
+        private int age;
+        // Constructor declaration (peremeterless empty constructor)
+        public Dog()
+        {
+        }
+        // Another constructor declaration
+        public Dog(string name)
+        {
+            this.name = name;
+        }
+        // Property declaration
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        // Method declaration (non-static)
+        public void Bark()
+        {
+            Console.WriteLine("{0} said: Wow-wow!",
+            name ?? "[unnamed dog]");
+        }
+        public int GetAge()
+        {
+            return age;
+        }
+    } // Closing bracket of the class body
     public class Sequence
     {
         // Static field, holding the current sequence value
         private static int currentValue = 0;
         // Intentionally deny instantiation of this class
-        
+
         // Static method for taking the next sequence value
         public static int NextValue()
         {
             currentValue++;
             return currentValue;
+        }
+    }
+}
+namespace Pembelajaran
+{
+    static class Aritmatika
+    {
+        static int Tambah(int a, int b)
+        {
+            return a+b;
+        }
+    }
+    static class Text
+    {
+        static void ReadFile(string fileName)
+        {
+            TextReader reader = new StreamReader(fileName);
+            string line = reader.ReadLine();
+            Console.WriteLine(line);
+            reader.Close();
+        }
+        static string ReverseText(string text)
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = text.Length - 1; i >= 0; i--)
+            {
+                sb.Append(text[i]);
+            }
+            return sb.ToString();
         }
     }
 }

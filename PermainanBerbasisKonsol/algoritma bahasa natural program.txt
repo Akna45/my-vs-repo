@@ -1,0 +1,16 @@
+algoritma bahasa natural program.cs
+
+out "pilih permainan"
+inp inputInt
+
+switch (inputInt)
+	case 1 :
+	hangman; break;
+
+
+masalah program (catat disini jika menemukan kesalahan dalam program)
+	1.tidak ada exception handling untuk menangani input lebih dari 1 char
+	2.tidak ada outro dan pemberitauan ingin mengulangi game atau tidak.
+	3.input sangat spesifik (case-sensitive)(huruf kecil dan huruf besar itu TERPISAH)
+
+periksa dan modif sedikit kodenya, lalu pahami baik baik alur kodenya

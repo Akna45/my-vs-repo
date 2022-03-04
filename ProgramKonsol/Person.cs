@@ -8,10 +8,14 @@ namespace ProgramKonsol
 {
     class Person
     {
-        public static void Tes()
+        public int a;
+        public byte b;
+        public long c;
+        private char d;
+
+        static void Tes()
         {
-            Console.WriteLine("halo dunia!");
-            Console.ReadKey();
+            Console.WriteLine("a");
         }
     }
 }
