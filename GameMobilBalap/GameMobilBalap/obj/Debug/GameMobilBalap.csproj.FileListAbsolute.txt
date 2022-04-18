@@ -8,3 +8,8 @@ E:\Visual Studio Project Directory\GameMobilBalap\GameMobilBalap\obj\Debug\GameM
 E:\Visual Studio Project Directory\GameMobilBalap\GameMobilBalap\obj\Debug\GameMobilBalap.csproj.CoreCompileInputs.cache
 E:\Visual Studio Project Directory\GameMobilBalap\GameMobilBalap\obj\Debug\GameMobilBalap.exe
 E:\Visual Studio Project Directory\GameMobilBalap\GameMobilBalap\obj\Debug\GameMobilBalap.pdb
+E:\Visual Studio Project Directory\GameMobilBalap\GameMobilBalap\bin\Debug\GameMobilBalap.exe.manifest
+E:\Visual Studio Project Directory\GameMobilBalap\GameMobilBalap\bin\Debug\GameMobilBalap.application
+E:\Visual Studio Project Directory\GameMobilBalap\GameMobilBalap\obj\Debug\GameMobilBalap.TrustInfo.xml
+E:\Visual Studio Project Directory\GameMobilBalap\GameMobilBalap\obj\Debug\GameMobilBalap.exe.manifest
+E:\Visual Studio Project Directory\GameMobilBalap\GameMobilBalap\obj\Debug\GameMobilBalap.application

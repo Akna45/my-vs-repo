@@ -357,7 +357,6 @@ namespace MyCalculator
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Click += new System.EventHandler(this.NumericValue);
             this.ResumeLayout(false);
             this.PerformLayout();
 

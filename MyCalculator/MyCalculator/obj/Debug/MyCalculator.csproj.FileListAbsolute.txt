@@ -8,3 +8,7 @@ E:\Visual Studio Project Directory\MyCalculator\MyCalculator\obj\Debug\MyCalcula
 E:\Visual Studio Project Directory\MyCalculator\MyCalculator\obj\Debug\MyCalculator.csproj.CoreCompileInputs.cache
 E:\Visual Studio Project Directory\MyCalculator\MyCalculator\obj\Debug\MyCalculator.exe
 E:\Visual Studio Project Directory\MyCalculator\MyCalculator\obj\Debug\MyCalculator.pdb
+E:\Visual Studio Project Directory\MyCalculator\MyCalculator\bin\Debug\MyCalculator.exe.manifest
+E:\Visual Studio Project Directory\MyCalculator\MyCalculator\bin\Debug\MyCalculator.application
+E:\Visual Studio Project Directory\MyCalculator\MyCalculator\obj\Debug\MyCalculator.exe.manifest
+E:\Visual Studio Project Directory\MyCalculator\MyCalculator\obj\Debug\MyCalculator.application

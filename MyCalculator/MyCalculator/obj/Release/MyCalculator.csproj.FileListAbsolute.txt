@@ -1,0 +1,1 @@
+E:\Visual Studio Project Directory\MyCalculator\MyCalculator\obj\Release\MyCalculator.csproj.AssemblyReference.cache

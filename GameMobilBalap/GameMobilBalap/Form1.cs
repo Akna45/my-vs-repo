@@ -37,7 +37,7 @@ namespace GameMobilBalap // timestamp : 35:03 (taro timestamp disini biar gak lu
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e) // yang membuat game-nya berjalan
         {
             moveline(gamespeed); // mengubah kecepatan jalan berdasarkan var. gamespeed
             enemy(gamespeed); // mengubah posisi musuh berdasarkan var. gamespeed
@@ -45,6 +45,7 @@ namespace GameMobilBalap // timestamp : 35:03 (taro timestamp disini biar gak lu
             coins(gamespeed); // mengubah posisi koin berdasarkan var. gamespeed
             dolarCollected(); // mengumpulkan koin dan menampilkannya di game
             speed(); // mengumpulkan jarak terjauh dan menampilkannya di game
+            
         }
 
         int collectedDolar = 0;
@@ -220,5 +221,6 @@ namespace GameMobilBalap // timestamp : 35:03 (taro timestamp disini biar gak lu
     IDE :
     Tulis dibawah mengenai idemu dalam game ini :
         - tambahkan suara efek tabrakan dan horor (ketawa seram)
+        - tambahkan restart game
 
 */

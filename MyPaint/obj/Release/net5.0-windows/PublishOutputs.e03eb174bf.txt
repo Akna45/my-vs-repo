@@ -1,0 +1,5 @@
+E:\Visual Studio Project Directory\MyPaint\bin\Release\net5.0-windows\publish\MyPaint.exe
+E:\Visual Studio Project Directory\MyPaint\bin\Release\net5.0-windows\publish\MyPaint.dll
+E:\Visual Studio Project Directory\MyPaint\bin\Release\net5.0-windows\publish\MyPaint.deps.json
+E:\Visual Studio Project Directory\MyPaint\bin\Release\net5.0-windows\publish\MyPaint.runtimeconfig.json
+E:\Visual Studio Project Directory\MyPaint\bin\Release\net5.0-windows\publish\MyPaint.pdb
