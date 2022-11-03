@@ -29,12 +29,14 @@ namespace MyMediaPlayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuSidePanel = new System.Windows.Forms.Panel();
             this.panelToolSubMenu = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.btnTool = new System.Windows.Forms.Button();
             this.btnEqualizer = new System.Windows.Forms.Button();
             this.panelPlaylistSubMenu = new System.Windows.Forms.Panel();
@@ -50,11 +52,15 @@ namespace MyMediaPlayer
             this.button2 = new System.Windows.Forms.Button();
             this.mediaBtn = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnHelp = new System.Windows.Forms.Button();
+            this.panelPlayer = new System.Windows.Forms.Panel();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuSidePanel.SuspendLayout();
             this.panelToolSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
             this.panelMediaSubmenu.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuSidePanel
@@ -153,6 +159,21 @@ namespace MyMediaPlayer
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.btnToolSidePanel_click);
             // 
+            // btnHelp
+            // 
+            this.btnHelp.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnHelp.Location = new System.Drawing.Point(0, 909);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnHelp.Size = new System.Drawing.Size(233, 50);
+            this.btnHelp.TabIndex = 10;
+            this.btnHelp.Text = "Bantuan";
+            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            // 
             // btnTool
             // 
             this.btnTool.Dock = System.Windows.Forms.DockStyle.Top;
@@ -183,6 +204,7 @@ namespace MyMediaPlayer
             this.btnEqualizer.Text = "Equalizer";
             this.btnEqualizer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEqualizer.UseVisualStyleBackColor = true;
+            this.btnEqualizer.Click += new System.EventHandler(this.btnEqualizer_Click);
             // 
             // panelPlaylistSubMenu
             // 
@@ -378,20 +400,34 @@ namespace MyMediaPlayer
             this.panelLogo.Size = new System.Drawing.Size(233, 100);
             this.panelLogo.TabIndex = 0;
             // 
-            // btnHelp
+            // panelPlayer
             // 
-            this.btnHelp.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnHelp.FlatAppearance.BorderSize = 0;
-            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnHelp.Location = new System.Drawing.Point(0, 909);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnHelp.Size = new System.Drawing.Size(233, 50);
-            this.btnHelp.TabIndex = 10;
-            this.btnHelp.Text = "Bantuan";
-            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.UseVisualStyleBackColor = true;
+            this.panelPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelPlayer.Location = new System.Drawing.Point(250, 565);
+            this.panelPlayer.Name = "panelPlayer";
+            this.panelPlayer.Size = new System.Drawing.Size(1114, 125);
+            this.panelPlayer.TabIndex = 12;
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(40)))), ((int)(((byte)(59)))));
+            this.panelChildForm.Controls.Add(this.pictureBox1);
+            this.panelChildForm.Location = new System.Drawing.Point(250, 0);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(1114, 565);
+            this.panelChildForm.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(402, 158);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(279, 277);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -399,6 +435,8 @@ namespace MyMediaPlayer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1364, 690);
+            this.Controls.Add(this.panelChildForm);
+            this.Controls.Add(this.panelPlayer);
             this.Controls.Add(this.menuSidePanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -409,6 +447,8 @@ namespace MyMediaPlayer
             this.panelToolSubMenu.ResumeLayout(false);
             this.panelPlaylistSubMenu.ResumeLayout(false);
             this.panelMediaSubmenu.ResumeLayout(false);
+            this.panelChildForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -437,6 +477,9 @@ namespace MyMediaPlayer
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Panel panelPlayer;
+        private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

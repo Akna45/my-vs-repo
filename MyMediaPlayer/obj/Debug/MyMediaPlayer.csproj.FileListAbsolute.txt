@@ -8,3 +8,5 @@ E:\Visual Studio Project Directory\MyMediaPlayer\obj\Debug\MyMediaPlayer.csproj.
 E:\Visual Studio Project Directory\MyMediaPlayer\obj\Debug\MyMediaPlayer.csproj.CoreCompileInputs.cache
 E:\Visual Studio Project Directory\MyMediaPlayer\obj\Debug\MyMediaPlayer.exe
 E:\Visual Studio Project Directory\MyMediaPlayer\obj\Debug\MyMediaPlayer.pdb
+E:\Visual Studio Project Directory\MyMediaPlayer\obj\Debug\MyMediaPlayer.Form2.resources
+E:\Visual Studio Project Directory\MyMediaPlayer\obj\Debug\MyMediaPlayer.Form3.resources

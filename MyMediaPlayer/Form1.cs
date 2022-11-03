@@ -52,6 +52,7 @@ namespace MyMediaPlayer
         }
         private void btnMenuSubMenu_click(object sender, EventArgs e) // melakukan aksi ketika diklik
         {
+            openChildPanel(new Form2());
             hideSubMenu(); // menyembunyikan submenu ketika diklik
         }
         // sisanya sama ya
@@ -73,5 +74,27 @@ namespace MyMediaPlayer
         {
             hideSubMenu();
         }
+
+        private Form activeForm = null; // variabel awal form
+        private void openChildPanel(Form childForm) // method untuk membuka form dan kustomisasi-nya
+        {
+            if(activeForm!=null) // jika value variabel aF tidak null
+                activeForm.Close(); // tutup form-nya
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm); // menambah form
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void btnEqualizer_Click(object sender, EventArgs e)
+        {
+            openChildPanel(new Form3());
+        }
     }
 }
+
+// timestamp : 16:13
